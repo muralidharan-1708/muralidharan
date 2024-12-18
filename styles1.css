@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f4f9; /* Light background */
+    color: #333; /* Dark grey text */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff; /* White background for header */
+    padding: 20px 10%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    width: 120px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #0077b6; /* Highlighted color */
+}
+
+#project-detail {
+    padding: 80px 10%; /* Add padding for spacing */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#project-title {
+    font-size: 40px;
+    color: #0077b6; /* Deep blue */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#project-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+#project-tech-stack {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+#project-tech-stack li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+}
+
+.tech-image {
+    width: 60px;  /* Adjust the size */
+    height: 60px;
+    margin-right: 15px; /* Space between image and text */
+    border-radius: 0; /* Make the image square */
+}
+
+.tech-item span {
+    font-size: 18px;
+    color: #0077b6;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#project-details {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    #project-detail {
+        padding: 50px 5%;
+    }
+
+    #project-title {
+        font-size: 30px;
+    }
+
+    #project-description {
+        font-size: 16px;
+    }
+
+    #project-tech-stack li {
+        font-size: 14px;
+    }
+
+    #project-details {
+        font-size: 14px;
+    }
+
+    .tech-image {
+        width: 30px; /* Smaller image size on smaller screens */
+        height: 30px;
+    }
+
+    .tech-item span {
+        font-size: 14px; /* Smaller text on smaller screens */
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/13900dced5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<!-- ----------About Section---------------- -->
+<div id="about">
+    <div class="container">
+        <div class="about-text">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Aspiring Data Science professional skilled in Python, C++, Java, and AI technologies, with strong problem-solving abilities using Data Structures and Algorithms (DSA). Passionate about solving real-world challenges through innovative solutions and seeking an opportunity to contribute to dynamic projects and grow in a collaborative, technology-driven environment.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>   
+                        <img src="images/py.png" alt="Python" style="width:80px;height:80px;border:1px solid black;margin-right: 15px;padding: 10px;">
+                        <img src="images/c++.png" alt="C++" style="width:80px;height:80px;border:1px solid black;margin-right: 15px;padding: 10px;">
+                        <img src="images/java.png" alt="Java" style="width:80px;height:80px;border:1px solid black;margin-right: 15px;padding: 10px;">
+                    
+                        <img src="images/html.png" alt="HTML" style="width:80px;height:80px;border:1px solid black;margin-right: 15px;padding: 10px;">
+                        <img src="images/css.png" alt="CSS" style="width:80px;height:80px;border:1px solid black;margin-right: 15px;padding: 10px;">
+                        <img src="images/js.png" alt="JavaScript" style="width:80px;height:80px;border:1px solid black;margin-right: 15px;padding: 10px;">
+                    
+                        <img src="images/git.png" alt="Github" style="width:80px;height:80px;border:1px solid black;margin-right: 15px;padding: 10px;">
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology</span><br>Artificial Intelligence and Datascience<br>Karpagam Institute of Technology,Coimbatore<br>CPGA(8.02 till 4thsem)</li>
+                            <li><span>HSC</span><br>Cheran Matrculation Higher Secondary School,Karur<br>Percentage 86%</li>
+                            <li><span>SSLC</span><br>Cheran Matrculation Higher Secondary School,Karur<br>Percentage 79%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------------Project------------------- -->
+ <div id="project">
+    <div class="container">
+        <div class="project-text">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>Insight verify</h2>
+                    <p>Developed an automated system for extracting and verifying multilingual data from unstructured documents using OCR and Ollama-based AI, achieving 3-sigma accuracy in processing noisy OCR outputs for DRDO RAC recruitment. Enhanced efficiency and accuracy in document validation workflows.</p>
+                    <a href="project-detail.html?id=1">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-face-smile-beam"></i>
+                    <h2>Sentiment Analysis</h2>
+                    <p>Developed a sentiment analysis solution for social media, using NLP and BERT to analyze posts, comments, and tweets, aiding reputation and perception management</p>
+                    <a href="project-detail.html?id=2">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- ------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> muralidharan1708@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9043818518</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/muralidharans1708/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/muralidharan-1708"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
