@@ -16,7 +16,7 @@
 
     <section id="project-detail">
         <div class="container">
-            <h1 id="project-title">Project Title</h1>
+            <h1 id="project-title">Insight verify</h1>
             <p id="project-description">Project description goes here...</p>
 
             <h3>Technical Stack</h3>
@@ -35,6 +35,51 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script>
+        const projects = {
+            1: {
+                title: "Insight Verify",
+                description: "Developed an automated system for extracting and verifying multilingual data from unstructured documents using OCR and Ollama-based AI, achieving 3-sigma accuracy in processing noisy OCR outputs for DRDO RAC recruitment. Enhanced efficiency and accuracy in document validation workflows.",
+                techStack: [
+                    { name: "Python", image: "images/py.png" },
+                    { name: "OCR", image: "images/ocr.png" },
+                    { name: "AI", image: "images/ai.png" }
+                ],
+                details: "Full project details for Insight Verify..."
+            },
+            2: {
+                title: "Sentiment Analysis",
+                description: "Developed a sentiment analysis solution for social media, using NLP and BERT to analyze posts, comments, and tweets, aiding reputation and perception management.",
+                techStack: [
+                    { name: "Python", image: "images/py.png" },
+                    { name: "NLP", image: "images/nlp.png" },
+                    { name: "BERT", image: "images/bert.png" }
+                ],
+                details: "Full project details for Sentiment Analysis..."
+            }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+        const project = projects[projectId];
+
+        if (project) {
+            document.getElementById('project-title').innerText = project.title;
+            document.getElementById('project-description').innerText = project.description;
+            document.getElementById('project-details').innerText = project.details;
+
+            const techStackContainer = document.getElementById('project-tech-stack');
+            techStackContainer.innerHTML = '';
+            project.techStack.forEach(tech => {
+                const techItem = document.createElement('li');
+                techItem.innerHTML = `<div class="tech-item"><img src="${tech.image}" alt="${tech.name}" class="tech-image"><span>${tech.name}</span></div>`;
+                techStackContainer.appendChild(techItem);
+            });
+        } else {
+            document.getElementById('project-title').innerText = "Project Not Found";
+            document.getElementById('project-description').innerText = "";
+            document.getElementById('project-details').innerText = "";
+        }
+    </script>
 </body>
 </html>
