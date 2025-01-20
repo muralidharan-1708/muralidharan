@@ -14,22 +14,22 @@
             transition: transform 0.3s ease; 
             padding: 10px;
             background-color: white;
+            border-radius: 10px;
         }
         .certificate-container:hover {
-            transform: scale(1.1); 
+            transform: scale(1.05); 
         }
         img {
             width: 100%;
             height: 300px;
             object-fit: contain;
+            border-radius: 10px;
         }
         .container {
             display: grid;
-            grid-template-columns:500px 500px;
-            margin-left: 100px;
-            margin-right: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
-            padding: 10px;
+            padding: 20px;
         }
         .button-container {
             text-align: center;
@@ -44,6 +44,8 @@
             text-decoration: none;
             display: inline-block;
             margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         .view-button:hover {
             background-color: #0056b3;
@@ -71,19 +73,19 @@
             </div>
         </div>
         <div class="certificate-container">
-            <img src="images/python-basic.jpeg" alt="Certificate 3">
+            <img src="images/python-basic.jpeg" alt="Certificate 4">
             <div class="button-container">
                 <a href="images/python-basic.jpeg" target="_blank" class="view-button">View Certificate</a>
             </div>
         </div>
         <div class="certificate-container">
-            <img src="images/sql-basic.jpeg" alt="Certificate 3">
+            <img src="images/sql-basic.jpeg" alt="Certificate 5">
             <div class="button-container">
                 <a href="images/sql-basic.jpeg" target="_blank" class="view-button">View Certificate</a>
             </div>
         </div>
         <div class="certificate-container">
-            <img src="images/html.jpeg" alt="Certificate 3">
+            <img src="images/html.jpeg" alt="Certificate 6">
             <div class="button-container">
                 <a href="images/html.jpeg" target="_blank" class="view-button">View Certificate</a>
             </div>
