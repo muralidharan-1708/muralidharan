@@ -1,6 +1,6 @@
 // Get the project ID from the URL
 const urlParams = new URLSearchParams(window.location.search);
-const projectId = urlParams.get('id'); // This will get the "id" query parameter
+const projectId = urlParams.get('id');
 
 // Example project data (you can replace this with dynamic content from a database or API)
 const projectData = {
@@ -36,12 +36,13 @@ if (project) {
     document.getElementById('project-details').innerText = project.details;
 
     const techStackList = document.getElementById('project-tech-stack');
-    project.techStack.forEach(tech => {
+    project.techStack.forEach((tech, index) => {
         const listItem = document.createElement('li');
         
         // Create a container for the image and the name
         const techItem = document.createElement('div');
         techItem.classList.add('tech-item');
+        techItem.style.animation = `fadeInUp ${0.5 + index * 0.1}s ease-in-out`;
 
         // Create image element
         const techImage = document.createElement('img');
