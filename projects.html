@@ -5,32 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - MuraliDharan S</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .project-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tech-tag {
+            background: #e3f2fd;
+            color: var(--primary-blue);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-header i {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+        }
+
+        .project-desc {
+            margin: 1rem 0;
+            color: #555;
+        }
+
+        .project-tech {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: var(--accent-blue);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1 class="sub-title">Projects</h1>
-        <div class="project-list">
-            <div>
-                <i class="fa-solid fa-file-code"></i>
-                <h2>Insight Verify</h2>
-                <p>Developed an automated system for extracting and verifying multilingual data from unstructured documents using OCR and Ollama-based AI, achieving 3-sigma accuracy in processing noisy OCR outputs for DRDO RAC recruitment. Enhanced efficiency and accuracy in document validation workflows.</p>
-                <a href="project-detail.html?id=1">Learn more</a>
+        <div class="project-container">
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Insight Verify</h3>
+                </div>
+                <p class="project-desc">Developed an automated system for extracting and verifying multilingual data from unstructured documents using OCR and Ollama-based AI, achieving 3-sigma accuracy in processing noisy OCR outputs for DRDO RAC recruitment. Enhanced efficiency and accuracy in document validation workflows.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">OCR</span>
+                    <span class="tech-tag">AI</span>
+                </div>
+                <a href="project-detail.html?id=1" class="project-link">
+                    View Details <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
 
-            <div>
-                <i class="fa-regular fa-face-smile-beam"></i>
-                <h2>IntelliQuiz Generator</h2>
-                <p>IntelliQuiz Generator is an AI-powered system that automates MCQ generation from scanned PDFs. It extracts text, formulates questions, and enables users to attempt quizzes. The system analyzes responses and visualizes scores, helping users assess their knowledge effectively.</p>
-                <a href="project-detail.html?id=2">Learn more</a>
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>IntelliQuiz Generator</h3>
+                </div>
+                <p class="project-desc">IntelliQuiz Generator is an AI-powered system that automates MCQ generation from scanned PDFs. It extracts text, formulates questions, and enables users to attempt quizzes. The system analyzes responses and visualizes scores, helping users assess their knowledge effectively.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">AI</span>
+                </div>
+                <a href="project-detail.html?id=2" class="project-link">
+                    View Details <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
 
-            <div>
-                <i class="fa-regular fa-face-smile-beam"></i>
-                <h2>NeuroBloom</h2>
-                <p>Developed a computer vision-based solution for processing question papers and automating mark calculation.
-                    Integrated document segmentation, text recognition, and scoring algorithms to streamline evaluation. Integrated
-                    support for Bloom's Taxonomy levels to classify questions based on cognitive complexity.</p>
-                <a href="project-detail.html?id=2">Learn more</a>
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>NeuroBloom</h3>
+                </div>
+                <p class="project-desc">Developed a computer vision-based solution for processing question papers and automating mark calculation. Integrated document segmentation, text recognition, and scoring algorithms to streamline evaluation. Integrated support for Bloom's Taxonomy levels to classify questions based on cognitive complexity.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Computer Vision</span>
+                    <span class="tech-tag">OCR</span>
+                    <span class="tech-tag">AI</span>
+                </div>
+                <a href="project-detail.html?id=3" class="project-link">
+                    View Details <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </div>

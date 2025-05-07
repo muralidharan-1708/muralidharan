@@ -2,87 +2,201 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MuraliDharan S - Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/13900dced5.js" crossorigin="anonymous"></script>
+    <title>MuraliDharan S - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #2A2A72;
+            --accent-blue: #009FFD;
+            --dark-text: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: #2A2A72;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+
+        .hero-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .profile-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+            border: 4px solid var(--primary-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--accent-blue);
+            transform: translateY(-3px);
+        }
+
+        .bio-section h1 {
+            font-size: 2.8rem;
+            color: var(--dark-text);
+            margin-bottom: 1rem;
+        }
+
+        .bio-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .skills-tabs {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-item {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 0.8rem;
+        }
+    </style>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="certificates.html">Certificates</a></li>
-                </ul>
-            </nav>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="certificates.html">Certificate</a>
+            <a href="projects.html">Project</a>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="profile-card">
+            <img src="images/dp.jpg" alt="MuraliDharan S" class="profile-img">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/muralidharans1708/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/muralidharan-1708" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="mailto:muralidharan1708@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
-    </div>
-    <!-- ----------About Section---------------- -->
-    <div id="about">
-        <div class="container">
-            <div class="about-text">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/dp.jpg" alt="MuraliDharan S" class="fade-in">
-                        <!-- Contact Section -->
-                        <div class="contact-left">
-                            <a href="mailto:muralidharan1708@gmail.com" class="fade-in"><i class="fa-solid fa-envelope"></i></a>
-                            <a href="tel:+919043818518" class="fade-in"><i class="fa-solid fa-phone"></i></a>
-                            <a href="https://www.linkedin.com/in/muralidharans1708/" class="fade-in"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/muralidharan-1708" class="fade-in"><i class="fa-brands fa-github"></i></a>
-                        </div>
+
+        <div class="bio-section">
+            <h1>MuraliDharan S</h1>
+            <p class="bio-text">
+                Aspiring Data Science professional skilled in Python, C++, Java, and AI technologies. Passionate about solving real-world challenges through innovative solutions and seeking an opportunity to contribute to dynamic projects and grow in a collaborative, technology-driven environment.
+            </p>
+
+            <div class="skills-tabs">
+                <h2>Technical Skills</h2>
+                <div class="skill-grid">
+                    <div class="skill-item">
+                        <img src="images/py.png" alt="Python" class="skill-icon">
+                        <span>Python</span>
                     </div>
-                    <div class="about-col-2">
-                        <h1 class="title slide-in-left">MuraliDharan S</h1>
-                        <h1 class="sub-title slide-in-left">Aspiring Data Science professional skilled in Python, C++, Java, and AI technologies, with strong problem-solving abilities using 
-                            Data Structures and Algorithms (DSA). Passionate about solving real-world challenges through innovative solutions and seeking 
-                            an opportunity to contribute to dynamic projects and grow in a collaborative, technology-driven environment.
-                        </h1>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>   
-                                <img src="images/py.png" alt="Python" class="skill-icon zoom-in">
-                                <img src="images/c++.png" alt="C++" class="skill-icon zoom-in">
-                                <img src="images/java.png" alt="Java" class="skill-icon zoom-in">
-                                <img src="images/html.png" alt="HTML" class="skill-icon zoom-in">
-                                <img src="images/css.png" alt="CSS" class="skill-icon zoom-in">
-                                <img src="images/js.png" alt="JavaScript" class="skill-icon zoom-in">
-                                <img src="images/git.png" alt="Github" class="skill-icon zoom-in">
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>Bachelor of Technology</span><br>Artificial Intelligence and Datascience<br>Karpagam Institute of Technology, Coimbatore<br>CPGA(8.02 till 4th sem)</li>
-                                <li><span>HSC</span><br>Cheran Matriculation Higher Secondary School, Karur<br>Percentage 86%</li>
-                                <li><span>SSLC</span><br>Cheran Matriculation Higher Secondary School, Karur<br>Percentage 79%</li>
-                            </ul>
-                        </div>
+                    <div class="skill-item">
+                        <img src="images/c++.png" alt="C++" class="skill-icon">
+                        <span>C++</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/java.png" alt="Java" class="skill-icon">
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/html.png" alt="HTML" class="skill-icon">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/css.png" alt="CSS" class="skill-icon">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/js.png" alt="JavaScript" class="skill-icon">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/git.png" alt="Git" class="skill-icon">
+                        <span>Git</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
 </body>
 </html>

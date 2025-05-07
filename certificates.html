@@ -1,99 +1,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Certificates</title>
+    <title>Certifications - MuraliDharan S</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        :root {
+            --primary-blue: #2A2A72;
+            --accent-blue: #009FFD;
+            --light-bg: #f8f9fa;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f1f1f1;
+            background: var(--light-bg);
         }
-        .certificate-container {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease; 
-            padding: 10px;
-            background-color: white;
-            border-radius: 10px;
+
+        .cert-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
         }
-        .certificate-container:hover {
-            transform: scale(1.05); 
-        }
-        img {
-            width: 100%;
-            height: 300px;
-            object-fit: contain;
-            border-radius: 10px;
-        }
-        .container {
+
+        .cert-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            padding: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
         }
-        .button-container {
+
+        .cert-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .cert-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--primary-blue);
+        }
+
+        .cert-actions {
+            padding: 1.5rem;
             text-align: center;
-            margin-top: 10px;
         }
-        .view-button {
-            padding: 10px 20px;
-            background-color: #007BFF;
+
+        .cert-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary-blue);
             color: white;
-            border: none;
-            cursor: pointer;
+            border-radius: 8px;
             text-decoration: none;
-            display: inline-block;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
         }
-        .view-button:hover {
-            background-color: #0056b3;
+
+        .cert-btn i {
+            margin-right: 0.5rem;
+        }
+
+        .cert-btn:hover {
+            background: var(--accent-blue);
+            transform: scale(1.05);
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 4rem 0 2rem;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="certificate-container">
-            <img src="images/SIH-certificate_page-0001.jpg" alt="Certificate 1">
-            <div class="button-container">
-                <a href="images/SIH-certificate_page-0001.jpg" target="_blank" class="view-button">View Certificate</a>
+    <header class="page-header">
+        <h1>My Certifications</h1>
+    </header>
+
+    <div class="cert-container">
+        <div class="cert-grid">
+            <!-- Certificate Blocks -->
+            <div class="cert-card">
+                <img src="images/SIH-certificate_page-0001.jpg" alt="SIH Certificate" class="cert-image">
+                <div class="cert-actions">
+                    <a href="images/SIH-certificate_page-0001.jpg" target="_blank" class="cert-btn">
+                        <i class="fas fa-expand"></i> View Full
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="certificate-container">
-            <img src="images/Data Structure and Algorithms using Java-1.png" alt="Certificate 2">
-            <div class="button-container">
-                <a href="images/Data Structure and Algorithms using Java-1.png" target="_blank" class="view-button">View Certificate</a>
+            <div class="cert-card">
+                <img src="images/Data Structure and Algorithms using Java-1.png" alt="DSA Certificate" class="cert-image">
+                <div class="cert-actions">
+                    <a href="images/Data Structure and Algorithms using Java-1.png" target="_blank" class="cert-btn">
+                        <i class="fas fa-expand"></i> View Full
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="certificate-container">
-            <img src="images/AZ-cpp-1.png" alt="Certificate 3">
-            <div class="button-container">
-                <a href="images/AZ-cpp-1.png" target="_blank" class="view-button">View Certificate</a>
+            <div class="cert-card">
+                <img src="images/AZ-cpp-1.png" alt="C++ Certificate" class="cert-image">
+                <div class="cert-actions">
+                    <a href="images/AZ-cpp-1.png" target="_blank" class="cert-btn">
+                        <i class="fas fa-expand"></i> View Full
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="certificate-container">
-            <img src="images/prayslab intern-1.png" alt="Certificate 4">
-            <div class="button-container">
-                <a href="images/prayslab intern-1.png" target="_blank" class="view-button">View Certificate</a>
+            <div class="cert-card">
+                <img src="images/prayslab intern-1.png" alt="Internship Certificate" class="cert-image">
+                <div class="cert-actions">
+                    <a href="images/prayslab intern-1.png" target="_blank" class="cert-btn">
+                        <i class="fas fa-expand"></i> View Full
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="certificate-container">
-            <img src="images/python-basic.jpeg" alt="Certificate 5">
-            <div class="button-container">
-                <a href="images/python-basic.jpeg" target="_blank" class="view-button">View Certificate</a>
+            <div class="cert-card">
+                <img src="images/python-basic.jpeg" alt="Python Certificate" class="cert-image">
+                <div class="cert-actions">
+                    <a href="images/python-basic.jpeg" target="_blank" class="cert-btn">
+                        <i class="fas fa-expand"></i> View Full
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="certificate-container">
-            <img src="images/sql-basic.jpeg" alt="Certificate 6">
-            <div class="button-container">
-                <a href="images/sql-basic.jpeg" target="_blank" class="view-button">View Certificate</a>
+            <div class="cert-card">
+                <img src="images/sql-basic.jpeg" alt="SQL Certificate" class="cert-image">
+                <div class="cert-actions">
+                    <a href="images/sql-basic.jpeg" target="_blank" class="cert-btn">
+                        <i class="fas fa-expand"></i> View Full
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="certificate-container">
-            <img src="images/html.jpeg" alt="Certificate 7">
-            <div class="button-container">
-                <a href="images/html.jpeg" target="_blank" class="view-button">View Certificate</a>
+            <div class="cert-card">
+                <img src="images/html.jpeg" alt="HTML Certificate" class="cert-image">
+                <div class="cert-actions">
+                    <a href="images/html.jpeg" target="_blank" class="cert-btn">
+                        <i class="fas fa-expand"></i> View Full
+                    </a>
+                </div>
             </div>
         </div>
     </div>
