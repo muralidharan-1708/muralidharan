@@ -9,17 +9,17 @@
         :root {
             --primary-blue: #2A2A72;
             --accent-blue: #009FFD;
-            --dark-text: #2c3e50;
+            --light-bg: #f8f9fa;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            background: #f8f9fa;
+            background: var(--light-bg);
         }
 
         header {
-            background: #2A2A72;
+            background: var(--primary-blue);
             color: white;
             padding: 1rem 0;
             position: sticky;
@@ -62,7 +62,7 @@
             background: white;
             padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
@@ -94,7 +94,7 @@
 
         .bio-section h1 {
             font-size: 2.8rem;
-            color: var(--dark-text);
+            color: var(--primary-blue);
             margin-bottom: 1rem;
         }
 
@@ -109,7 +109,7 @@
             background: white;
             padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
 
         .skill-grid {
@@ -142,18 +142,18 @@
         <nav>
             <a href="#about">About</a>
             <a href="resume.html">Resume</a>
-            <a href="certificates.html">Certificate</a>
-            <a href="projects.html">Project</a>
+            <a href="certificates.html">Certificates</a>
+            <a href="projects.html">Projects</a>
         </nav>
     </header>
 
     <div class="hero-section">
         <div class="profile-card">
-            <img src="images/dp.jpg" alt="MuraliDharan S" class="profile-img">
+            <img src="images/dp.jpg" alt="Profile picture of MuraliDharan S" class="profile-img">
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/muralidharans1708/" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/muralidharan-1708" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="mailto:muralidharan1708@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/muralidharans1708/" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/muralidharan-1708" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:muralidharan1708@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
 
@@ -167,31 +167,31 @@
                 <h2>Technical Skills</h2>
                 <div class="skill-grid">
                     <div class="skill-item">
-                        <img src="images/py.png" alt="Python" class="skill-icon">
+                        <img src="images/py.png" alt="Python logo" class="skill-icon">
                         <span>Python</span>
                     </div>
                     <div class="skill-item">
-                        <img src="images/c++.png" alt="C++" class="skill-icon">
+                        <img src="images/c++.png" alt="C++ logo" class="skill-icon">
                         <span>C++</span>
                     </div>
                     <div class="skill-item">
-                        <img src="images/java.png" alt="Java" class="skill-icon">
+                        <img src="images/java.png" alt="Java logo" class="skill-icon">
                         <span>Java</span>
                     </div>
                     <div class="skill-item">
-                        <img src="images/html.png" alt="HTML" class="skill-icon">
+                        <img src="images/html.png" alt="HTML logo" class="skill-icon">
                         <span>HTML</span>
                     </div>
                     <div class="skill-item">
-                        <img src="images/css.png" alt="CSS" class="skill-icon">
+                        <img src="images/css.png" alt="CSS logo" class="skill-icon">
                         <span>CSS</span>
                     </div>
                     <div class="skill-item">
-                        <img src="images/js.png" alt="JavaScript" class="skill-icon">
+                        <img src="images/js.png" alt="JavaScript logo" class="skill-icon">
                         <span>JavaScript</span>
                     </div>
                     <div class="skill-item">
-                        <img src="images/git.png" alt="Git" class="skill-icon">
+                        <img src="images/git.png" alt="Git logo" class="skill-icon">
                         <span>Git</span>
                     </div>
                 </div>

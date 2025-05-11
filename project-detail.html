@@ -194,16 +194,6 @@
                 <h2>Project Overview</h2>
                 <div id="project-description"></div>
             </div>
-
-            <div class="project-section">
-                <h2>Technical Stack</h2>
-                <div class="tech-stack" id="project-tech-stack"></div>
-            </div>
-
-            <div class="project-section">
-                <h2>Key Features</h2>
-                <div id="project-details"></div>
-            </div>
         </div>
     </main>
 
@@ -215,66 +205,87 @@
         const projects = {
             1: {
                 title: "Insight Verify",
-                description: `Project Title: Automated System for Extracting and Verifying Multilingual Data from Unstructured Documents
+                description: `Insight Verify is a project developed for the Defence Research and Development Organization (DRDO) Recruitment and Assessment Centre (RAC). It is an automated system designed to extract and verify multilingual data from unstructured documents using Optical Character Recognition (OCR) and Ollama-based AI models. The system automates document verification, ensuring accuracy while handling a variety of input formats and languages.
 
-                <h2>Project Overview:</h2> Insight Verify is a project developed for the Defence Research and Development Organization (DRDO) Recruitment and Assessment Centre (RAC).
-                I was part of a 6-member team that developed an automated system designed to extract and verify multilingual data from unstructured documents using Optical Character Recognition (OCR) and Ollama-based AI models. The system aimed to automate the process of document verification, ensuring accuracy while handling a variety of input formats and languages.
+                <h2>Key Contributions</h2>
+                <ul>
+                    <li>Integrated OCR technology with Ollama-based AI models for efficient text extraction from noisy, unstructured documents.</li>
+                    <li>Achieved 3-sigma accuracy in processing noisy OCR outputs for DRDO RAC recruitment assessments.</li>
+                    <li>Enhanced the efficiency and accuracy of document validation workflows, automating key steps to reduce manual intervention.</li>
+                </ul>
 
-                <h2>Key Contributions:</h2>
-
-                OCR and AI Integration: I contributed to the integration of OCR technology with Ollama-based AI models for efficient text extraction from noisy, unstructured documents. This allowed the system to handle documents in multiple languages.
-                Achieving 3-Sigma Accuracy: I assisted in achieving 3-sigma accuracy in processing noisy OCR outputs for DRDO RAC recruitment assessments, helping to refine the document validation process and reduce errors.
-                Workflow Efficiency: As part of the team, I helped enhance the overall efficiency and accuracy of the document validation workflows, automating key steps to reduce manual intervention and ensure faster processing.
-                <h2>Technological Stack:</h2>
-
-                OCR (Optical Character Recognition) for text extraction from scanned documents.
-                LLM (Large Language Models) to process and interpret extracted data.
-                React.js for building the front-end interface.
-                MongoDB as the database solution to handle large-scale document data.`,
-                techStack: [
-                    { name: "Python", image: "images/py.png" },
-                    { name: "OCR", image: "images/ocr.png" },
-                    { name: "AI", image: "images/ai.png" }
-                ],
-                githubLink: "https://github.com/yourusername/insight-verify"
+                <h2>Tech Stack</h2>
+                <ul>
+                    <li>OCR (Optical Character Recognition)</li>
+                    <li>AI Models</li>
+                    <li>React.js</li>
+                    <li>MongoDB</li>
+                </ul>`,
+                githubLink: "https://github.com/muralidharan-1708/Insight-Verify"
             },
-            2: {
-                title: "IntelliQuiz Generator",
-                description: `Overview
-                IntelliQuiz Generator is an AI-powered question generation system designed to create multiple-choice questions (MCQs) from scanned PDFs. The system automates the process of extracting, analyzing, and generating quizzes, making it useful for educators, students, and organizations conducting assessments.
+            // 2: {
+            //     title: "IntelliQuiz Generator",
+            //     description: `IntelliQuiz Generator is an AI-powered question generation system designed to create multiple-choice questions (MCQs) from scanned PDFs. The system automates the process of extracting, analyzing, and generating quizzes, making it useful for educators, students, and organizations conducting assessments.
 
-                <h2>Key Features</h2>
-                Automated Text Extraction
+            //     <h2>Key Contributions</h2>
+            //     <ul>
+            //         <li>Automated text extraction from scanned PDFs using advanced OCR technology.</li>
+            //         <li>Utilized Llama 3.2 to generate relevant and high-quality MCQs from the extracted text.</li>
+            //         <li>Classified questions based on Bloom’s Taxonomy to assess different cognitive levels.</li>
+            //         <li>Provided dynamic charts and graphs for performance visualization and analysis.</li>
+            //     </ul>
 
-                Extracts text from scanned PDFs using advanced OCR (Optical Character Recognition).
-                Pre-processes the text to remove noise and enhance readability.
-                <h2>AI-Based Question Generation</h2>
+            //     <h2>Tech Stack</h2>
+            //     <ul>
+            //         <li>OCR: Tesseract OCR</li>
+            //         <li>AI Model: Llama 3.2</li>
+            //         <li>Backend: Flask</li>
+            //         <li>Frontend: React.js</li>
+            //         <li>Database: PostgreSQL</li>
+            //     </ul>`
+            // },
+            3: {
+                title: "CodeVault – Web Application for Managing Coding Questions",
+                description: `CodeVault is a lightweight web application built to help students and developers organize and review previous year coding questions and answers in one place. It provides a clean and user-friendly interface for storing questions, tracking progress, and preparing efficiently for technical interviews and exams. The app includes a secure login system for personalized access, making it a useful tool for structured and focused coding practice.
 
-                Utilizes Llama 3.2 to generate relevant and high-quality MCQs from the extracted text.
-                Ensures diversity in question patterns, covering factual, conceptual, and analytical questions.
-                Classifies questions based on Bloom’s Taxonomy to assess different cognitive levels.
-                <h2>User Interaction and Response Analysis</h2>
+                <h2>Key Contributions</h2>
+                <ul>
+                    <li>Designed and developed the entire front-end using HTML, CSS, and JavaScript.</li>
+                    <li>Implemented a secure login system to ensure user-specific access and data separation.</li>
+                    <li>Created a structured interface to add, view, and manage coding questions and their solutions.</li>
+                    <li>Focused on responsive design and intuitive navigation for ease of use across devices.</li>
+                    <li>Helped users organize their coding journey by enabling categorized storage and review features.</li>
+                </ul>
 
-                Allows users to select answers and submit responses.
-                Automatically evaluates the responses and calculates scores.
-                Provides instant feedback on correctness with explanations.
-                <h2>Performance Visualization</h2>
+                <h2>Tech Stack</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>`,
+                githubLink: "https://github.com/muralidharan-1708/Code-Vault"
+            },
+            4: {
+                title: "Explanify – AI-Powered Chrome Extension for GitHub",
+                description: `Explanify is a Chrome extension designed to enhance the coding experience on GitHub by providing AI-driven code explanations, language translation, and error detection. With a simple one-click interface, users can paste code blocks and instantly receive insights powered by large language models, without leaving the GitHub interface. This tool is especially useful for students, developers, and contributors who work with unfamiliar codebases or languages.
 
-                Uses dynamic charts and graphs to display results.
-                Tracks user performance and highlights strengths & weaknesses.
-                <h2>Technology Stack</h2>
-                AI Model: Llama 3.2 (for question generation)
-                OCR: Tesseract OCR (for text extraction from PDFs)
-                Database: PostgreSQL (for storing questions, responses, and scores)
-                Backend: Flask (for API development and logic processing)
-                Frontend: React.js (for user interaction and visualization)
-                Data Visualization: Matplotlib / Chart.js (for score analysis)`,
-                techStack: [
-                    { name: "Python", image: "images/py.png" },
-                    { name: "NLP", image: "images/nlp.png" },
-                    { name: "BERT", image: "images/bert.png" }
-                ],
-                githubLink: "https://github.com/yourusername/intelliquiz-generator"
+                <h2>Key Contributions</h2>
+                <ul>
+                    <li>Designed and developed the Chrome extension’s UI and core functionality using JavaScript and Chrome Extension APIs.</li>
+                    <li>Integrated LLMs (via Ollama or other APIs) to generate real-time code explanations, language conversions, and identify syntax or logical errors.</li>
+                    <li>Ensured seamless GitHub integration by enabling code snippet selection and contextual analysis directly on GitHub pages.</li>
+                    <li>Focused on enhancing code readability and learning by simplifying complex logic and unfamiliar syntax for users.</li>
+                    <li>Conducted testing to ensure cross-browser compatibility and user-friendly performance.</li>
+                </ul>
+
+                <h2>Tech Stack</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Chrome Extension APIs</li>
+                    <li>HTML, CSS</li>
+                    <li>Large Language Models (via Ollama or other APIs)</li>
+                </ul>`,
+                githubLink: "https://github.com/muralidharan-1708/Explainify"
             }
         };
 
@@ -285,7 +296,6 @@
         if (project) {
             document.getElementById('project-title').innerText = project.title;
             document.getElementById('project-description').innerHTML = project.description;
-            document.getElementById('project-details').innerText = project.details;
             document.getElementById('project-github-link').href = project.githubLink;
 
             const techStackContainer = document.getElementById('project-tech-stack');
@@ -298,7 +308,6 @@
         } else {
             document.getElementById('project-title').innerText = "Project Not Found";
             document.getElementById('project-description').innerText = "";
-            document.getElementById('project-details').innerText = "";
             document.getElementById('project-github-link').style.display = 'none';
         }
     </script>
